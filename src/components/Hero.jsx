@@ -1,25 +1,25 @@
-import React from "react";
 import Marquee from "react-fast-marquee";
 import AnimatedContent from "./AnimatedContent";
 
 const Hero = () => {
   const skills = [
     { name: "Express", img: "https://skillicons.dev/icons?i=express" },
-    { name: "React", img: "https://skillicons.dev/icons?i=react" },
+    { name: "React JS", img: "https://skillicons.dev/icons?i=react" },
     { name: "MongoDB", img: "https://skillicons.dev/icons?i=mongodb" },
     { name: "HTML", img: "https://skillicons.dev/icons?i=html" },
     { name: "CSS", img: "https://skillicons.dev/icons?i=css" },
     { name: "Tailwind", img: "https://skillicons.dev/icons?i=tailwind" },
-    { name: "NodeJS", img: "https://skillicons.dev/icons?i=nodejs" },
+    { name: "Node JS", img: "https://skillicons.dev/icons?i=nodejs" },
     { name: "Python", img: "https://skillicons.dev/icons?i=py" },
     { name: "JavaScript", img: "https://skillicons.dev/icons?i=js" },
+    { name: "Next JS", img: "https://skillicons.dev/icons?i=nextjs" },
+    { name: "React Native", img: "https://skillicons.dev/icons?i=react" },
+    { name: "Git", img: "https://skillicons.dev/icons?i=git" },
+    { name: "MySQL", img: "https://skillicons.dev/icons?i=mysql" },
   ];
 
   return (
-    <div
-      className="text-center h-screen flex flex-col justify-center items-center relative md:px-0 px-[2rem]"
-      id="home"
-    >
+    <div className=" relative md:px-[8rem] px-[2rem] py-[1rem] " id="home">
       <AnimatedContent
         distance={150}
         direction="horizontal"
@@ -30,7 +30,9 @@ const Hero = () => {
         scale={1}
         threshold={0.2}
       >
-        <p className="text-[#3CD98E] mt-[9rem] ">Front End Developer</p>
+        <p className="text-lg mt-[9rem] ">
+          👋 Hello, I’m <span className="text-[#3CD98E]">Ifad Yusuf</span>
+        </p>
       </AnimatedContent>
       <AnimatedContent
         distance={150}
@@ -43,7 +45,9 @@ const Hero = () => {
         delay={400}
         threshold={0.2}
       >
-        <h1 className="text-6xl font-semibold my-3">Ifad Yusuf</h1>
+        <h1 className="md:text-6xl text-4xl font-semibold mt-2 ">
+          Software Developer
+        </h1>
       </AnimatedContent>
       <AnimatedContent
         distance={150}
@@ -56,9 +60,9 @@ const Hero = () => {
         delay={800}
         threshold={0.2}
       >
-        <p className="md:max-w-[65%] max-w-[90%] text-white opacity-75 mx-auto">
-          Crafting responsive websites with seamless experience, elegant design,
-          and intuitive interactions.
+        <p className="text-base md:max-w-[50%] w-full mt-[1rem] text-white opacity-75 ">
+          I create a website and mobile app that responsive, smooth experience,
+          elegant interface, and user-friendly interaction.
         </p>
       </AnimatedContent>
 
@@ -73,7 +77,7 @@ const Hero = () => {
         delay={1000}
         threshold={0.2}
       >
-        <button className="rounded-full px-[2.5rem] py-2 bg-[#3CD98E] text-black mt-[1.5rem] cursor-pointer text-sm ">
+        <button className="rounded-lg  text-base px-[2rem] py-3 font-semibold bg-[#3CD98E] text-black mt-[2.5rem] cursor-pointer ">
           Hire Me!
         </button>
       </AnimatedContent>
@@ -86,11 +90,11 @@ const Hero = () => {
         config={{ tension: 80, friction: 20 }}
         initialOpacity={0}
         animateOpacity
-        delay={1100}
+        delay={1000}
         scale={1}
         threshold={0.2}
       >
-        <div className="relative md:max-w-[800px] max-w-[300px] mx-auto md:mt-[6rem] mt-[7rem] overflow-hidden ">
+        <div className="relative  mx-auto md:mt-[4rem] mt-[5rem] overflow-hidden ">
           {/* Left Fade */}
           <div className="absolute left-0 top-0 h-full md:w-40 w-5 bg-[linear-gradient(to_right,rgba(10,10,11,1),transparent)] z-10 pointer-events-none" />
           {/* Right Fade */}
