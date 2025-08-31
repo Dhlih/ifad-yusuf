@@ -19,7 +19,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className=" relative md:px-[8rem] px-[2rem] py-[1rem] " id="home">
+    <div className=" relative md:px-[8rem] px-[1.5rem]  py-[1rem] " id="home">
       <AnimatedContent
         distance={150}
         direction="horizontal"

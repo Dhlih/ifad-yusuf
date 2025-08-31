@@ -8,7 +8,7 @@ import EtiketinImg from "../assets/e-tiketin.png"; // Import gambar e-tiketin
 const Projects = () => {
   return (
     <div
-      className=" md:mt-[8rem] mt-[6rem] md:px-[8rem] px-[2rem] "
+      className=" md:mt-[8rem] mt-[6rem] md:px-[8rem] px-[1.5rem] "
       id="projects"
     >
       <AnimatedContent

@@ -3,7 +3,7 @@ import AnimatedContent from "./AnimatedContent";
 const Contact = () => {
   return (
     <div
-      className="  md:mt-[8rem] mt-[6rem]  md:px-[8rem] px-[2rem]"
+      className="  md:mt-[8rem] mt-[6rem]  md:px-[8rem] px-[1.5rem] "
       id="contact"
     >
       <div className="flex md:flex-row flex-col justify-between">

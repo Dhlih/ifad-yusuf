@@ -5,7 +5,7 @@ import { CiLinkedin } from "react-icons/ci";
 
 const Footer = () => {
   return (
-    <div className=" md:mt-[7rem] mt-[5rem] md:px-[8rem] px-[2rem]">
+    <div className=" md:mt-[7rem] mt-[5rem] md:px-[8rem] px-[1.5rem] ">
       <div className="line bg-[#424242] w-full h-[1px] opacity-60 rounded-full"></div>
       <div className="flex items-center md:justify-between justify-center flex-wrap my-[2rem] space-y-4">
         <p className="opacity-75">© 2025 Ifad Yusuf. All rights reserved.</p>

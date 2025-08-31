@@ -3,7 +3,7 @@ import Myself from "../assets/myself.png";
 
 const About = () => {
   return (
-    <div className="w-full  md:px-[8rem] px-[2rem] " id="about">
+    <div className="w-full  md:px-[8rem] px-[1.5rem] " id="about">
       <div className=" space-y-6 md:mt-[8rem] mt-[6rem] ">
         <div className="flex md:flex-row flex-col  space-x-[1rem]">
           {/* Gambar di sebelah kiri */}
