@@ -86,9 +86,25 @@ const Hero = () => {
             </button>
           </AnimatedContent>
         </div>
-        <div className="w-[400px] h-[250px] relative mt-[7rem] md:block hidden">
-          <LetterGlitch glitchSpeed={50} outerVignette={false} smooth={true} />
-        </div>
+        <AnimatedContent
+          distance={150}
+          direction="horizontal"
+          reverse={false}
+          config={{ tension: 80, friction: 20 }}
+          initialOpacity={0}
+          animateOpacity
+          scale={1}
+          delay={1000}
+          threshold={0.2}
+        >
+          <div className="w-[350px] h-[250px] relative mt-[7rem] md:block hidden">
+            <LetterGlitch
+              glitchSpeed={50}
+              outerVignette={false}
+              smooth={true}
+            />
+          </div>
+        </AnimatedContent>
       </div>
 
       {/* Marquee Scroll */}

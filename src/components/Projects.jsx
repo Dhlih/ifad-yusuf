@@ -121,12 +121,12 @@ const Projects = () => {
 
             {/* button */}
             <div className="md:mt-[2rem] mt-[3rem] flex items-center space-x-[1.5rem]">
-              <a href="https://github.com/Dhlih/Ficpactcup2" target="_blank">
+              <a href="https://github.com/Dhlih/ifad-yusuf.git" target="_blank">
                 <button className="bg-[#1B1B1B] outline-1 outline-[#424242] p-3 rounded-md cursor-pointer">
                   <IoCodeSlash className="text-2xl" />
                 </button>
               </a>
-              <a href="https://e-tiketin.vercel.app" target="_blank">
+              <a href="https://ifadyusuf.vercel.app/" target="_blank">
                 <button className="bg-[#1B1B1B] outline-1 outline-[#424242] p-3 rounded-md cursor-pointer">
                   <IoOpenOutline className="text-2xl" />
                 </button>
@@ -175,12 +175,12 @@ const Projects = () => {
 
             {/* button */}
             <div className="md:mt-[2rem] mt-[3rem] flex items-center space-x-[1.5rem]">
-              <a href="https://github.com/Dhlih/Ficpactcup2" target="_blank">
+              <a href="https://github.com/Dhlih/CoreUp.git" target="_blank">
                 <button className="bg-[#1B1B1B] outline-1 outline-[#424242] p-3 rounded-md cursor-pointer">
                   <IoCodeSlash className="text-2xl" />
                 </button>
               </a>
-              <a href="https://e-tiketin.vercel.app" target="_blank">
+              <a href="https://coreup-azure.vercel.app" target="_blank">
                 <button className="bg-[#1B1B1B] outline-1 outline-[#424242] p-3 rounded-md cursor-pointer">
                   <IoOpenOutline className="text-2xl" />
                 </button>
