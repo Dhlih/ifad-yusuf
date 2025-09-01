@@ -21,7 +21,7 @@ const Projects = () => {
         scale={1}
         threshold={0.2}
       >
-        <h2 className="text-center font-semibold md:text-4xl text-2xl">
+        <h2 className="md:text-center font-semibold text-4xl">
           My <span className="text-[#3CD98E]">Projects</span>
         </h2>
       </AnimatedContent>

@@ -43,7 +43,7 @@ const About = () => {
               scale={1}
               threshold={0.2}
             >
-              <h2 className="font-semibold md:text-4xl text-2xl mb-[1rem]">
+              <h2 className="font-semibold text-4xl  mb-[1rem]">
                 About <span className="text-[#3CD98E]">Me</span>
               </h2>
             </AnimatedContent>
