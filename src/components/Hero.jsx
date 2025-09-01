@@ -1,5 +1,7 @@
 import Marquee from "react-fast-marquee";
 import AnimatedContent from "./AnimatedContent";
+import DotGrid from "./DotGrid";
+import LetterGlitch from "./LetterGlitch";
 
 const Hero = () => {
   const skills = [
@@ -19,66 +21,75 @@ const Hero = () => {
   ];
 
   return (
-    <div className=" relative md:px-[8rem] px-[1.5rem]  py-[1rem] " id="home">
-      <AnimatedContent
-        distance={150}
-        direction="horizontal"
-        reverse={false}
-        config={{ tension: 80, friction: 20 }}
-        initialOpacity={0.2}
-        animateOpacity
-        scale={1}
-        threshold={0.2}
-      >
-        <p className="text-lg mt-[9rem] ">
-          👋 Hello, I’m <span className="text-[#3CD98E]">Ifad Yusuf</span>
-        </p>
-      </AnimatedContent>
-      <AnimatedContent
-        distance={150}
-        direction="horizontal"
-        reverse={false}
-        config={{ tension: 80, friction: 20 }}
-        initialOpacity={0}
-        animateOpacity
-        scale={1}
-        delay={400}
-        threshold={0.2}
-      >
-        <h1 className="text-6xl  font-semibold mt-2 ">Software Developer</h1>
-      </AnimatedContent>
-      <AnimatedContent
-        distance={150}
-        direction="horizontal"
-        reverse={false}
-        config={{ tension: 80, friction: 20 }}
-        initialOpacity={0}
-        animateOpacity
-        scale={1}
-        delay={800}
-        threshold={0.2}
-      >
-        <p className="text-base md:max-w-[50%] w-full mt-[1rem] text-white opacity-75 ">
-          I create a website and mobile app that responsive, smooth experience,
-          elegant interface, and user-friendly interaction.
-        </p>
-      </AnimatedContent>
+    <div className="relative md:px-[8rem] px-[1.5rem]  py-[1rem] " id="home">
+      <div className="flex items-center justify-between">
+        <div>
+          <AnimatedContent
+            distance={150}
+            direction="horizontal"
+            reverse={false}
+            config={{ tension: 80, friction: 20 }}
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1}
+            threshold={0.2}
+          >
+            <p className="text-lg mt-[9rem] ">
+              👋 Hello, I’m <span className="text-[#3CD98E]">Ifad Yusuf</span>
+            </p>
+          </AnimatedContent>
+          <AnimatedContent
+            distance={150}
+            direction="horizontal"
+            reverse={false}
+            config={{ tension: 80, friction: 20 }}
+            initialOpacity={0}
+            animateOpacity
+            scale={1}
+            delay={400}
+            threshold={0.2}
+          >
+            <h1 className="text-6xl  font-semibold mt-2 ">
+              Software Developer
+            </h1>
+          </AnimatedContent>
+          <AnimatedContent
+            distance={150}
+            direction="horizontal"
+            reverse={false}
+            config={{ tension: 80, friction: 20 }}
+            initialOpacity={0}
+            animateOpacity
+            scale={1}
+            delay={800}
+            threshold={0.2}
+          >
+            <p className="text-base md:max-w-[80%] w-full mt-[1rem] text-white opacity-75 ">
+              I create a website and mobile app that responsive, smooth
+              experience, elegant interface, and user-friendly interaction.
+            </p>
+          </AnimatedContent>
 
-      <AnimatedContent
-        distance={150}
-        direction="horizontal"
-        reverse={false}
-        config={{ tension: 80, friction: 20 }}
-        initialOpacity={0}
-        animateOpacity
-        scale={1}
-        delay={1000}
-        threshold={0.2}
-      >
-        <button className="rounded-lg  text-base px-[2rem] py-3 font-semibold bg-[#3CD98E] text-black mt-[2.5rem] cursor-pointer ">
-          Hire Me!
-        </button>
-      </AnimatedContent>
+          <AnimatedContent
+            distance={150}
+            direction="horizontal"
+            reverse={false}
+            config={{ tension: 80, friction: 20 }}
+            initialOpacity={0}
+            animateOpacity
+            scale={1}
+            delay={1000}
+            threshold={0.2}
+          >
+            <button className="rounded-lg  text-base px-[2rem] py-3 font-semibold bg-[#3CD98E] text-black mt-[2rem] cursor-pointer ">
+              Hire Me!
+            </button>
+          </AnimatedContent>
+        </div>
+        <div className="w-[400px] h-[250px] relative mt-[7rem] md:block hidden">
+          <LetterGlitch glitchSpeed={50} outerVignette={false} smooth={true} />
+        </div>
+      </div>
 
       {/* Marquee Scroll */}
       <AnimatedContent
@@ -102,7 +113,7 @@ const Hero = () => {
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="flex items-center px-4 py-2 my-2 gap-1 mx-3 text-white bg-[#1B1B1B] outline-1 outline-[#424242] rounded-full"
+                className="flex items-center px-4 py-2 my-2 gap-1 mx-3 text-white bg-[#1B1B1B] outline-1 outline-[#424242] rounded-lg"
               >
                 <img src={skill.img} alt={skill.name} className="w-5 mr-2" />
                 <span className="text-sm">{skill.name}</span>
