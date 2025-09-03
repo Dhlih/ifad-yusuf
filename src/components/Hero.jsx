@@ -49,7 +49,7 @@ const Hero = () => {
             delay={400}
             threshold={0.2}
           >
-            <h1 className="text-6xl  font-semibold mt-2 ">
+            <h1 className="text-6xl font-semibold mt-2 leading-[70px]">
               Software Developer
             </h1>
           </AnimatedContent>
